@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flex Playground</title>
+</head>
+<body>
+    <h1>Hi! I'm your playground.</h1>
+    <main class="container">
+        <h2>Flex box demo</h2>
+        <div class="flex-demo">
+            <!-- <div class="my-flex-box flex-task">
+                <h3>My flex box demo</h3>
+                <div class="my-flex-box-wrapper flex-border">
+                    <div class="my-flex-box-content box-content">
+                        <div class="flex-frog">1</div>
+                        <div class="flex-frog">2</div>
+                        <div class="flex-frog">3</div>
+                        <div class="flex-frog">4</div>
+                        <div class="flex-frog">5</div>
+                        <div class="flex-frog">6</div>
+                        <div class="flex-frog">7</div>
+                        <div class="flex-frog">8</div>
+                        <div class="flex-frog">9</div>
+                        <div class="flex-frog">10</div>
+                        <div class="flex-frog">11</div>
+                        <div class="flex-frog">12</div>
+                        <div class="flex-frog">13</div>
+                        <div class="flex-frog">14</div>
+                        <div class="flex-frog">15</div>
+                        <div class="flex-frog">16</div>
+                        <div class="flex-frog">17</div>
+                        <div class="flex-frog">18</div>
+                        <div class="flex-frog">19</div>
+                        <div class="flex-frog">20</div>
+                        <div class="flex-frog">21</div>
+                        <div class="flex-frog">22</div>
+                        <div class="flex-frog">23</div>
+                        <div class="flex-frog">24</div>
+                        <div class="flex-frog">25</div>
+                        <div class="flex-frog">26</div>
+                        <div class="flex-frog">27</div>
+                        <div class="flex-frog">28</div>
+                        <div class="flex-frog">29</div>
+                        <div class="flex-frog">30</div>
+                        <div class="flex-frog">31</div>
+                        <div class="flex-frog">32</div>
+                        <div class="flex-frog">33</div>
+                        <div class="flex-frog">34</div>
+                        <div class="flex-frog">35</div>
+                        <div class="flex-frog">36</div>
+                        <div class="flex-frog">37</div>
+                        <div class="flex-frog">38</div>
+                        <div class="flex-frog">39</div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="flex-unset flex-task">
+                <h3>flex-wrap: 
+                    <form>
+                        <input type="radio" id="unset" value="unset" name="wrap" onclick="changeWrap(this.value)" > 
+                        <label for="unset">unset;</label>
+                        <input type="radio" id="wrap" value="wrap" name="wrap" onclick="changeWrap(this.value)"> 
+                        <label for="wrap">wrap;</label>
+                        <input type="radio" id="wrap_reverse" value="wrap_reverse" name="wrap" onclick="changeWrap(this.value)"> 
+                        <label for="wrap_reverse">wrap-reverse;</label>
+                    </form>
+                </h3>
+                <div class="flex-unset-box flex-border">
+                    <div id="flexWrap" class="flex-unset-box-content box-content">
+                        <div class="flex-unset-item box-wrapper">1</div>
+                        <div class="flex-unset-item box-wrapper">2</div>
+                        <div class="flex-unset-item box-wrapper">3</div>
+                        <div class="flex-unset-item box-wrapper">4</div>
+                        <div class="flex-unset-item box-wrapper">5</div>
+                        <div class="flex-unset-item box-wrapper">6</div>
+                        <div class="flex-unset-item box-wrapper">7</div>
+                        <div class="flex-unset-item box-wrapper">8</div>
+                        <div class="flex-unset-item box-wrapper">9</div>
+                        <div class="flex-unset-item box-wrapper">10</div>
+                        <div class="flex-unset-item box-wrapper">11</div>
+                        <div class="flex-unset-item box-wrapper">12</div>
+                        <div class="flex-unset-item box-wrapper">13</div>
+                        <div class="flex-unset-item box-wrapper">14</div>
+                        <div class="flex-unset-item box-wrapper">15</div>
+                        <div class="flex-unset-item box-wrapper">16</div>
+                        <div class="flex-unset-item box-wrapper">17</div>
+                        <div class="flex-unset-item box-wrapper">18</div>
+                        <div class="flex-unset-item box-wrapper">19</div>
+                        <div class="flex-unset-item box-wrapper">20</div>
+                        <div class="flex-unset-item box-wrapper">21</div>
+                        <div class="flex-unset-item box-wrapper">22</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-mix flex-task">
+                <h3>flex-direction: 
+                    <form>
+                        <input type="radio" id="row" value="row" name="direction" onclick="changeDirection(this.value)" > 
+                        <label for="row">row;</label>
+                        <input type="radio" id="row_reverse" value="row_reverse" name="direction" onclick="changeDirection(this.value)"> 
+                        <label for="row_reverse">row-reverse;</label>
+                        <input type="radio" id="column" value="column" name="direction" onclick="changeDirection(this.value)"> 
+                        <label for="column">column;</label>
+                        <input type="radio" id="column_reverse" value="column_reverse" name="direction" onclick="changeDirection(this.value)"> 
+                        <label for="column_reverse">column-reverse;</label>
+                    </form>
+                </h3>
+                <h3>justify-content: 
+                    <form>
+                        <input type="radio" id="justifyStart" value="flex_start" name="justify" onclick="changeJustify(this.value)" > 
+                        <label for="justifyStart">flex-start;</label>
+                        <input type="radio" id="justifyEnd" value="flex_end" name="justify" onclick="changeJustify(this.value)" > 
+                        <label for="justifyEnd">flex-end;</label>
+                        <input type="radio" id="justifyCenter" value="center" name="justify" onclick="changeJustify(this.value)" > 
+                        <label for="justifyCenter">center;</label>
+                        <input type="radio" id="justifySpaceBetween" value="space_between" name="justify" onclick="changeJustify(this.value)" > 
+                        <label for="justifySpaceBetween">space-between;</label>
+                        <input type="radio" id="justifySpaceAround" value="space_around" name="justify" onclick="changeJustify(this.value)" > 
+                        <label for="justifySpaceAround">space-around;</label>
+                        <input type="radio" id="justifySpaceEvenly" value="space_evenly" name="justify" onclick="changeJustify(this.value)" > 
+                        <label for="justifySpaceEvenly">space-evenly;</label>
+                    </form>
+                </h3>
+                <h3>align-items: 
+                    <form>
+                        <input type="radio" id="alignStart" value="flex_start" name="align" onclick="changeAlign(this.value)" > 
+                        <label for="alignStart">flex-start;</label>
+                        <input type="radio" id="alignEnd" value="flex_end" name="align" onclick="changeAlign(this.value)" > 
+                        <label for="alignEnd">flex-end;</label>
+                        <input type="radio" id="alignCenter" value="center" name="align" onclick="changeAlign(this.value)" > 
+                        <label for="alignCenter">center;</label>
+                    </form>
+                </h3>
+                <div class="flex-mix-box flex-border">
+                    <div id="flexMixed" class="flex-mix-box-content box-content">
+                        <div class="flex-mix-item box-wrapper">1</div>
+                        <div class="flex-mix-item box-wrapper">2</div>
+                        <div class="flex-mix-item box-wrapper">3</div>
+                        <div class="flex-mix-item box-wrapper">4</div>
+                        <div class="flex-mix-item box-wrapper">5</div>
+                        <div class="flex-mix-item box-wrapper">6</div>
+                        <div class="flex-mix-item box-wrapper">7</div>
+                        <div class="flex-mix-item box-wrapper">8</div>
+                        <div class="flex-mix-item box-wrapper">9</div>
+                        <div class="flex-mix-item box-wrapper">10</div>
+                        <div class="flex-mix-item box-wrapper">11</div>
+                        <div class="flex-mix-item box-wrapper">12</div>
+                        <div class="flex-mix-item box-wrapper">13</div>
+                        <div class="flex-mix-item box-wrapper">14</div>
+                        <div class="flex-mix-item box-wrapper">15</div>
+                        <div class="flex-mix-item box-wrapper">16</div>
+                        <div class="flex-mix-item box-wrapper">17</div>
+                        <div class="flex-mix-item box-wrapper">18</div>
+                        <div class="flex-mix-item box-wrapper">19</div>
+                        <div class="flex-mix-item box-wrapper">20</div>
+                        <div class="flex-mix-item box-wrapper">21</div>
+                        <div class="flex-mix-item box-wrapper">22</div>
+                        <div class="flex-mix-item box-wrapper">23</div>
+                        <div class="flex-mix-item box-wrapper">24</div>
+                        <div class="flex-mix-item box-wrapper">25</div>
+                        <div class="flex-mix-item box-wrapper">26</div>
+                        <div class="flex-mix-item box-wrapper">27</div>
+                        <div class="flex-mix-item box-wrapper">28</div>
+                        <div class="flex-mix-item box-wrapper">29</div>
+                        <div class="flex-mix-item box-wrapper">30</div>
+                        <div class="flex-mix-item box-wrapper">31</div>
+                        <div class="flex-mix-item box-wrapper">32</div>
+                        <div class="flex-mix-item box-wrapper">33</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex-order flex-task">
+                <h3>order: 
+                    <form>
+                        <label for="elemOne">Box 1:</label>
+                        <input type="number" id="elemOne" name="order" onchange="changeOrder(this)">
+                        <label for="elemTwo">Box 2:</label>
+                        <input type="number" id="elemTwo" name="order" onchange="changeOrder(this)">
+                        <label for="elemThree">Box 3:</label>
+                        <input type="number" id="elemThree" name="order" onchange="changeOrder(this)">
+                        <label for="elemFour">Box 4:</label>
+                        <input type="number" id="elemFour" name="order" onchange="changeOrder(this)">
+                        <label for="elemFive">Box 5:</label>
+                        <input type="number" id="elemFive" name="order" onchange="changeOrder(this)">
+                    </form>
+                </h3>
+                <div class="flex-order-box flex-border">
+                    <div id="flexOrder" class="flex-order-box-content box-content">
+                        <div id="elementOne" class="flex-order-item box-wrapper">1</div>
+                        <div id="elementTwo" class="flex-order-item box-wrapper">2</div>
+                        <div id="elementThree" class="flex-order-item box-wrapper">3</div>
+                        <div id="elementFour" class="flex-order-item box-wrapper">4</div>
+                        <div id="elementFive" class="flex-order-item box-wrapper">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>
